@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadrack Talabahan - Project Documentation</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 40px;
+            background: #f0f0f0;
+        }
+        .document {
+            background: white;
+            padding: 80px 60px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 22px;
+            margin-top: 100px;
+        }
+        h2 {
+            font-size: 18px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 16px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        h4 {
+            font-size: 14px;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+        .author-section {
+            text-align: center;
+            margin-top: 150px;
+            font-size: 14px;
+        }
+        .date-section {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 14px;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        .table-wrapper {
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 13px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background: #f5f5f5;
+            font-weight: bold;
+        }
+        .toc {
+            margin: 40px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .toc li {
+            margin: 8px 0;
+        }
+        .toc a {
+            text-decoration: none;
+            color: #333;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        .page-break {
+            page-break-after: always;
+        }
+    </style>
+</head>
+<body>
+    <div class="document">
+        <h1>Shadrack Talabahan<br>Seafood Restaurant and Retail System<br><br>COMPREHENSIVE PROJECT DOCUMENTATION</h1>
+        
+        <div class="author-section">
+            <p style="color: #b91c1c; font-weight: bold;">Created By<br>TALAbahan Developer Team<br>Bachelor of Science in Information Technology<br>Section: BSIT-2B</p>
+        </div>
+
+        <div style="margin-top: 180px;"></div>
+
+        <div class="author-section">
+            <p>By:<br>Mj Laurito<br>Adrian Lirazan<br>James Hanzo<br>Andrie Ravina<br><br>Date:<br>May 19, 2026</p>
+        </div>
+
+        <div class="page-break"></div>
+
+        <h2>TABLE OF CONTENTS</h2>
+        <div class="toc">
+            <ul>
+                <li><a href="#client-interview">1. CLIENT INTERVIEW DOCUMENTATION</a>
+                    <ul>
+                        <li><a href="#team-composition">1.1 Team Composition</a></li>
+                        <li><a href="#business-info">1.2 Business Information</a></li>
+                        <li><a href="#business-history">1.3 Business History</a></li>
+                        <li><a href="#nature-business">1.4 Nature of Business</a></li>
+                        <li><a href="#workflow">1.5 Current Workflow/Process</a></li>
+                        <li><a href="#problems">1.6 Problems and Challenges</a></li>
+                        <li><a href="#requirements">1.7 System Requirements</a></li>
+                    </ul>
+                </li>
+                <li><a href="#system-proposal">2. SYSTEM PROPOSAL</a></li>
+                <li><a href="#database-design">3. DATABASE DESIGN (ERD)</a></li>
+                <li><a href="#uiux-design">4. UI/UX DESIGN</a></li>
+                <li><a href="#system-architecture">5. SYSTEM ARCHITECTURE</a></li>
+                <li><a href="#working-features">6. WORKING SYSTEM FEATURES</a></li>
+                <li><a href="#advanced-features">7. ADVANCED FEATURES</a></li>
+                <li><a href="#testing">8. TESTING AND DEBUGGING</a></li>
+                <li><a href="#github">9. GITHUB VERSION CONTROL</a></li>
+                <li><a href="#conclusion">10. CONCLUSION</a></li>
+            </ul>
+        </div>
+
+        <div class="page-break"></div>
+
+        <h2 id="client-interview">1. CLIENT INTERVIEW DOCUMENTATION</h2>
+        
+        <h3 id="team-composition">1.1 TEAM COMPOSITION</h3>
+        <p><strong>Group Name:</strong> TALAbahan Developer Team<br>
+        <strong>Academic Section:</strong> BSIT-2B</p>
+        <ul>
+            <li><strong>Mj Laurito:</strong> Team Lead, System Administrator, and Lead Developer.</li>
+            <li><strong>Adrian Lirazan:</strong> Backend Support and Technical Researcher.</li>
+            <li><strong>James Hanzo:</strong> UI/UX Designer and Quality Assurance.</li>
+            <li><strong>Andrie Ravina:</strong> Documentation Specialist and Technical Support.</li>
+        </ul>
+
+        <h3 id="business-info">1.2 BUSINESS INFORMATION</h3>
+        <p><strong>Business Name:</strong> Shadrack Talabahan<br>
+        <strong>Business Address:</strong> [Insert Address Here]<br>
+        <strong>Contact Number:</strong> [Insert Contact Number Here]<br>
+        <strong>Owner/Manager:</strong> [Insert Owner Name Here]</p>
+
+        <h3 id="business-history">1.3 BUSINESS HISTORY</h3>
+        <p>Shadrack Talabahan is a specialized seafood restaurant and retail business that has been serving the community for [X] years. The establishment offers a wide variety of fresh marine products both for dine-in restaurant customers and retail shoppers.</p>
+
+        <h3 id="nature-business">1.4 NATURE OF BUSINESS</h3>
+        <ul>
+            <li><strong>Type:</strong> Seafood Restaurant and Retail</li>
+            <li><strong>Products:</strong> Fresh marine products, seafood dishes, fish, shrimp, crabs, etc.</li>
+            <li><strong>Target Market:</strong> Local community residents, seafood lovers, restaurant customers</li>
+            <li><strong>Operating Hours:</strong> [Insert Operating Hours Here]</li>
+        </ul>
+
+        <h3 id="workflow">1.5 CURRENT WORKFLOW/PROCESS</h3>
+        <p>The current workflow of Shadrack Talabahan relies heavily on manual paper-based methods:</p>
+        <ol>
+            <li>Customer (dine-in or retail) orders seafood products</li>
+            <li>Staff manually checks cold storage and display areas for availability</li>
+            <li>Staff looks up prices from memorized values or cheat sheets</li>
+            <li>Transaction is hand-written into a physical logbook</li>
+            <li>Customer pays and receives hand-written receipt</li>
+            <li>At end of day, owner manually calculates total sales using calculator</li>
+            <li>Stock counts are done manually on a weekly basis</li>
+        </ol>
+
+        <h3 id="problems">1.6 PROBLEMS AND CHALLENGES ENCOUNTERED</h3>
+        
+        <h4>a) Stock Management Issues:</h4>
+        <ul>
+            <li>Manual counting leads to frequent miscounts</li>
+            <li>No real-time inventory tracking</li>
+            <li>Difficulty in identifying low stock items</li>
+        </ul>
+
+        <h4>b) Sales Recording Issues:</h4>
+        <ul>
+            <li>Illegible handwriting leads to lost data</li>
+            <li>Misplaced receipts and logbooks</li>
+            <li>No backup of sales records</li>
+        </ul>
+
+        <h4>c) Pricing Issues:</h4>
+        <ul>
+            <li>Inconsistent pricing due to memorized values</li>
+            <li>Difficulty updating prices when supplier rates change</li>
+            <li>No profit margin tracking</li>
+        </ul>
+
+        <h4>d) Reporting Issues:</h4>
+        <ul>
+            <li>Manual calculation of daily/weekly sales is time-consuming</li>
+            <li>Prone to mathematical errors</li>
+            <li>No proper sales analytics</li>
+        </ul>
+
+        <h3 id="requirements">1.7 SYSTEM REQUIREMENTS/REQUESTED FEATURES</h3>
+        
+        <h4>a) Must Have Features:</h4>
+        <ul>
+            <li>User authentication (Admin/Cashier roles)</li>
+            <li>Product management (Add, Edit, Delete, View)</li>
+            <li>Category management</li>
+            <li>Stock monitoring with low stock alerts</li>
+            <li>Point of Sale (POS) interface</li>
+            <li>Sales recording with receipt generation</li>
+            <li>Customer information management</li>
+        </ul>
+
+        <h4>b) Should Have Features:</h4>
+        <ul>
+            <li>Sales reports (Daily, Weekly, Monthly)</li>
+            <li>Stock movement tracking</li>
+            <li>Activity logs for audit trail</li>
+            <li>Discount management</li>
+        </ul>
+
+        <h4>c) Could Have Features:</h4>
+        <ul>
+            <li>Customer loyalty program</li>
+            <li>Multiple payment methods</li>
+            <li>Barcode scanning</li>
+        </ul>
+
+        <div class="page-break"></div>
+
+        <h2 id="system-proposal">2. SYSTEM PROPOSAL</h2>
+        
+        <h3>2.1 PROJECT TITLE</h3>
+        <p>Shadrack Talabahan: Seafood Restaurant and Retail System</p>
+
+        <h3>2.2 PROJECT OBJECTIVES</h3>
+        <p><strong>General Objective:</strong><br>
+        To develop a web-based inventory and sales management system for Shadrack Talabahan that will streamline business operations, improve accuracy, and provide better data management for both restaurant and retail seafood operations.</p>
+
+        <p><strong>Specific Objectives:</strong></p>
+        <ol>
+            <li>To automate inventory tracking of fresh seafood products and reduce manual counting errors</li>
+            <li>To provide an efficient Point of Sale (POS) interface for both restaurant and retail sales transactions</li>
+            <li>To maintain accurate records of sales, customers, and seafood products</li>
+            <li>To generate reports for business analysis and decision-making</li>
+            <li>To implement user roles and access control for system security</li>
+        </ol>
+
+        <h3>2.3 PROPOSED SYSTEM DESCRIPTION</h3>
+        <p>Shadrack Talabahan Seafood Restaurant and Retail System will enable store owners and staff to easily organize inventory tracking of fresh marine products and manage financial sales records, guaranteeing optimal use of available resources and reducing manual counting errors. Customers can conveniently make purchases by visiting the physical restaurant or retail shop, and all transaction data is securely stored in the system.</p>
+
+        <p>The database stores details about seafood inventory items, including stock balances, wholesale buying prices, retail selling prices, and automated profit margins, enabling effective product management. The system allows seamless processing and recording of sales based on real-time price rules, improving transaction accuracy and service speed. Additionally, the system integrates a reporting feature that allows users to instantly export performance reports for daily or weekly auditing.</p>
+
+        <p>Overall, the Seafood Restaurant and Retail System offers a dependable and user-friendly platform for both business owners and staff, improving operational effectiveness, recording accuracy, and business performance.</p>
+
+        <h3>2.4 SCOPE AND LIMITATIONS</h3>
+        
+        <h4>Scope:</h4>
+        <ul>
+            <li>User management (Admin and Cashier roles)</li>
+            <li>Product and category management</li>
+            <li>Inventory and stock management</li>
+            <li>Point of Sale transactions</li>
+            <li>Sales recording and reporting</li>
+            <li>Customer information management</li>
+            <li>Activity logging and audit trail</li>
+        </ul>
+
+        <h4>Limitations:</h4>
+        <ul>
+            <li>The system does not include online ordering or delivery</li>
+            <li>The system requires internet connection for cloud database (if applicable)</li>
+            <li>Barcode scanning requires additional hardware</li>
+            <li>The system does not integrate with accounting software</li>
+        </ul>
+
+        <div class="page-break"></div>
+
+        <h2 id="database-design">3. DATABASE DESIGN (ERD)</h2>
+        
+        <h3>3.1 ENTITIES AND ATTRIBUTES</h3>
+
+        <div class="table-wrapper">
+            <h4>1. Users</h4>
+            <table>
+                <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+                <tr><td>id</td><td>INT(11)</td><td>Primary Key, Auto Increment</td></tr>
+                <tr><td>uuid</td><td>CHAR(36)</td><td>Unique User ID (UUID)</td></tr>
+                <tr><td>email</td><td>VARCHAR(255)</td><td>User Email (Unique)</td></tr>
+                <tr><td>password</td><td>VARCHAR(255)</td><td>Hashed Password</td></tr>
+                <tr><td>role</td><td>VARCHAR(100)</td><td>User Role (Admin/Cashier)</td></tr>
+                <tr><td>status</td><td>VARCHAR(100)</td><td>Account Status</td></tr>
+                <tr><td>name</td><td>VARCHAR(255)</td><td>Full Name</td></tr>
+                <tr><td>phone</td><td>VARCHAR(20)</td><td>Phone Number</td></tr>
+                <tr><td>created_at</td><td>TIMESTAMP</td><td>Creation Date</td></tr>
+                <tr><td>updated_at</td><td>TIMESTAMP</td><td>Last Update</td></tr>
+                <tr><td>deleted_at</td><td>TIMESTAMP</td><td>Soft Delete</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper">
+            <h4>2. Categories</h4>
+            <table>
+                <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+                <tr><td>id</td><td>INT(11)</td><td>Primary Key, Auto Increment</td></tr>
+                <tr><td>name</td><td>VARCHAR(100)</td><td>Category Name (Unique)</td></tr>
+                <tr><td>created_at</td><td>DATETIME</td><td>Creation Date</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper">
+            <h4>3. Products</h4>
+            <table>
+                <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+                <tr><td>id</td><td>INT(11)</td><td>Primary Key, Auto Increment</td></tr>
+                <tr><td>sku</td><td>VARCHAR(64)</td><td>Stock Keeping Unit (Unique)</td></tr>
+                <tr><td>name</td><td>VARCHAR(200)</td><td>Product Name</td></tr>
+                <tr><td>category_id</td><td>INT(11)</td><td>Foreign Key to Categories</td></tr>
+                <tr><td>unit</td><td>VARCHAR(30)</td><td>Unit of Measurement</td></tr>
+                <tr><td>cost</td><td>DECIMAL(10,2)</td><td>Cost Price</td></tr>
+                <tr><td>price</td><td>DECIMAL(10,2)</td><td>Selling Price</td></tr>
+                <tr><td>stock_qty</td><td>INT(11)</td><td>Stock Quantity</td></tr>
+                <tr><td>reorder_level</td><td>INT(11)</td><td>Reorder Level</td></tr>
+                <tr><td>is_active</td><td>TINYINT(1)</td><td>Active Status</td></tr>
+                <tr><td>created_at</td><td>DATETIME</td><td>Creation Date</td></tr>
+                <tr><td>updated_at</td><td>DATETIME</td><td>Last Update</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper">
+            <h4>4. Sales</h4>
+            <table>
+                <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+                <tr><td>id</td><td>INT(11)</td><td>Primary Key, Auto Increment</td></tr>
+                <tr><td>receipt_no</td><td>VARCHAR(50)</td><td>Receipt Number (Unique)</td></tr>
+                <tr><td>sale_datetime</td><td>DATETIME</td><td>Sale Date & Time</td></tr>
+                <tr><td>cashier_user_id</td><td>INT(11)</td><td>Foreign Key to Users</td></tr>
+                <tr><td>subtotal</td><td>DECIMAL(10,2)</td><td>Subtotal Amount</td></tr>
+                <tr><td>discount_total</td><td>DECIMAL(10,2)</td><td>Total Discount</td></tr>
+                <tr><td>grand_total</td><td>DECIMAL(10,2)</td><td>Grand Total</td></tr>
+                <tr><td>payment_method</td><td>VARCHAR(50)</td><td>Payment Method</td></tr>
+                <tr><td>payment_reference</td><td>VARCHAR(100)</td><td>Payment Reference</td></tr>
+                <tr><td>amount_tendered</td><td>DECIMAL(10,2)</td><td>Amount Tendered</td></tr>
+                <tr><td>change_amount</td><td>DECIMAL(10,2)</td><td>Change Amount</td></tr>
+                <tr><td>status</td><td>VARCHAR(20)</td><td>Sale Status (completed/voided)</td></tr>
+                <tr><td>void_reason</td><td>VARCHAR(255)</td><td>Void Reason</td></tr>
+                <tr><td>voided_at</td><td>DATETIME</td><td>Void Date</td></tr>
+                <tr><td>voided_by</td><td>INT(11)</td><td>Voided By User</td></tr>
+                <tr><td>created_at</td><td>DATETIME</td><td>Creation Date</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper">
+            <h4>5. Sale Items</h4>
+            <table>
+                <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+                <tr><td>id</td><td>INT(11)</td><td>Primary Key, Auto Increment</td></tr>
+                <tr><td>sale_id</td><td>INT(11)</td><td>Foreign Key to Sales</td></tr>
+                <tr><td>product_id</td><td>INT(11)</td><td>Foreign Key to Products</td></tr>
+                <tr><td>sku_snapshot</td><td>VARCHAR(64)</td><td>Product SKU at Sale</td></tr>
+                <tr><td>name_snapshot</td><td>VARCHAR(200)</td><td>Product Name at Sale</td></tr>
+                <tr><td>unit_price</td><td>DECIMAL(10,2)</td><td>Unit Price at Sale</td></tr>
+                <tr><td>qty</td><td>INT(11)</td><td>Quantity Sold</td></tr>
+                <tr><td>discount</td><td>DECIMAL(10,2)</td><td>Item Discount</td></tr>
+                <tr><td>line_total</td><td>DECIMAL(10,2)</td><td>Line Total</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper">
+            <h4>6. Stock Movements</h4>
+            <table>
+                <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+                <tr><td>id</td><td>INT(11)</td><td>Primary Key, Auto Increment</td></tr>
+                <tr><td>product_id</td><td>INT(11)</td><td>Foreign Key to Products</td></tr>
+                <tr><td>movement_type</td><td>VARCHAR(20)</td><td>Movement Type (sale/adjust/void)</td></tr>
+                <tr><td>qty</td><td>INT(11)</td><td>Quantity</td></tr>
+                <tr><td>unit_cost</td><td>DECIMAL(10,2)</td><td>Unit Cost</td></tr>
+                <tr><td>ref_type</td><td>VARCHAR(30)</td><td>Reference Type</td></tr>
+                <tr><td>ref_id</td><td>INT(11)</td><td>Reference ID</td></tr>
+                <tr><td>reason</td><td>VARCHAR(255)</td><td>Movement Reason</td></tr>
+                <tr><td>created_at</td><td>DATETIME</td><td>Creation Date</td></tr>
+                <tr><td>user_id</td><td>INT(11)</td><td>Foreign Key to Users</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper">
+            <h4>7. TBL_LOGS (Activity Logs)</h4>
+            <table>
+                <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+                <tr><td>LOGID</td><td>INT(11)</td><td>Primary Key, Auto Increment</td></tr>
+                <tr><td>USERID</td><td>INT(11)</td><td>Foreign Key to Users</td></tr>
+                <tr><td>ACTION</td><td>TEXT</td><td>Action Performed</td></tr>
+                <tr><td>DATELOG</td><td>VARCHAR(30)</td><td>Date of Log</td></tr>
+                <tr><td>TIMELOG</td><td>VARCHAR(30)</td><td>Time of Log</td></tr>
+                <tr><td>user_ip_address</td><td>TEXT</td><td>User IP Address</td></tr>
+                <tr><td>device_used</td><td>TEXT</td><td>Device Used</td></tr>
+                <tr><td>USER_NAME</td><td>VARCHAR(100)</td><td>User Name</td></tr>
+                <tr><td>identifier</td><td>VARCHAR(100)</td><td>Action Identifier</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper">
+            <h4>8. Login Attempts</h4>
+            <table>
+                <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+                <tr><td>id</td><td>INT(11)</td><td>Primary Key, Auto Increment</td></tr>
+                <tr><td>email</td><td>VARCHAR(255)</td><td>Entered Email/Name</td></tr>
+                <tr><td>ip_address</td><td>VARCHAR(45)</td><td>IP Address</td></tr>
+                <tr><td>attempt_time</td><td>DATETIME</td><td>Attempt Time</td></tr>
+                <tr><td>user_agent</td><td>VARCHAR(255)</td><td>User Agent</td></tr>
+                <tr><td>user_id</td><td>INT(11)</td><td>Foreign Key to Users</td></tr>
+            </table>
+        </div>
+
+        <h3>3.2 ENTITY RELATIONSHIPS</h3>
+        <ol>
+            <li><strong>USER (1) → (M) SALE</strong><br>
+                - One user can process many sales<br>
+                - Relationship: One-to-Many<br>
+                - Foreign Key: SALES.cashier_user_id → USERS.id</li>
+            <li><strong>USER (1) → (M) SALE (Voided By)</strong><br>
+                - One user can void many sales<br>
+                - Relationship: One-to-Many<br>
+                - Foreign Key: SALES.voided_by → USERS.id</li>
+            <li><strong>USER (1) → (M) TBL_LOGS</strong><br>
+                - One user can have many activity logs<br>
+                - Relationship: One-to-Many<br>
+                - Foreign Key: TBL_LOGS.USERID → USERS.id</li>
+            <li><strong>USER (1) → (M) STOCK_MOVEMENTS</strong><br>
+                - One user can initiate many stock movements<br>
+                - Relationship: One-to-Many<br>
+                - Foreign Key: STOCK_MOVEMENTS.user_id → USERS.id</li>
+            <li><strong>CATEGORY (1) → (M) PRODUCTS</strong><br>
+                - One category can have many products<br>
+                - Relationship: One-to-Many<br>
+                - Foreign Key: PRODUCTS.category_id → CATEGORIES.id</li>
+            <li><strong>PRODUCTS (1) → (M) SALE_ITEMS</strong><br>
+                - One product can appear in many sale items<br>
+                - Relationship: One-to-Many<br>
+                - Foreign Key: SALE_ITEMS.product_id → PRODUCTS.id</li>
+            <li><strong>PRODUCTS (1) → (M) STOCK_MOVEMENTS</strong><br>
+                - One product can have many stock movements<br>
+                - Relationship: One-to-Many<br>
+                - Foreign Key: STOCK_MOVEMENTS.product_id → PRODUCTS.id</li>
+            <li><strong>SALES (1) → (M) SALE_ITEMS</strong><br>
+                - One sale can have many sale items<br>
+                - Relationship: One-to-Many<br>
+                - Foreign Key: SALE_ITEMS.sale_id → SALES.id</li>
+            <li><strong>USER (1) → (M) LOGIN_ATTEMPTS</strong><br>
+                - One user can have many login attempts<br>
+                - Relationship: One-to-Many<br>
+                - Foreign Key: LOGIN_ATTEMPTS.user_id → USERS.id</li>
+        </ol>
+
+        <div class="page-break"></div>
+
+        <h2 id="uiux-design">4. UI/UX DESIGN</h2>
+        
+        <h3>4.1 DESIGN PRINCIPLES</h3>
+        <ul>
+            <li>Clean and modern interface using AdminLTE template</li>
+            <li>Responsive design for desktop and tablet devices</li>
+            <li>Intuitive navigation with sidebar menu</li>
+            <li>Consistent color scheme and typography</li>
+            <li>Clear feedback for user actions</li>
+        </ul>
+
+        <h3>4.2 MAIN INTERFACES</h3>
+
+        <h4>a) Login Page:</h4>
+        <ul>
+            <li>Clean login form with NAME and password fields</li>
+            <li>Lockout counter for failed attempts</li>
+            <li>Branding with store name and logo</li>
+        </ul>
+
+        <h4>b) Dashboard:</h4>
+        <ul>
+            <li>Summary cards showing:
+                <ul>
+                    <li>Total Products</li>
+                    <li>Today's Revenue</li>
+                    <li>This Week's Revenue</li>
+                    <li>This Month's Revenue</li>
+                    <li>This Year's Revenue</li>
+                    <li>Total Users (Admin only)</li>
+                </ul>
+            </li>
+            <li>Charts: Last 7 Days, Current Month Daily, Current Year Monthly</li>
+            <li>Recent activity logs (Admin only)</li>
+        </ul>
+
+        <h4>c) Product Management:</h4>
+        <ul>
+            <li>Data table with SKU, Name, Category, Cost, Price, Stock, Reorder Level</li>
+            <li>Search and filter functionality</li>
+            <li>Add/Edit/Delete product buttons</li>
+            <li>Stock adjustment functionality</li>
+            <li>Low stock alert indicators</li>
+        </ul>
+
+        <h4>d) Point of Sale (POS):</h4>
+        <ul>
+            <li>Product grid with categories on left</li>
+            <li>Cart section showing selected items</li>
+            <li>Quantity and discount controls</li>
+            <li>Payment section with tender and change calculation</li>
+            <li>Receipt preview and print button</li>
+        </ul>
+
+        <h4>e) Sales History:</h4>
+        <ul>
+            <li>Table showing all sales transactions</li>
+            <li>Filter by receipt number, date, cashier, payment method, status</li>
+            <li>View receipt and void sale options</li>
+        </ul>
+
+        <h4>f) User Management:</h4>
+        <ul>
+            <li>User list with roles and status</li>
+            <li>Add/Edit/Delete users</li>
+            <li>Role assignment (Admin/Cashier)</li>
+        </ul>
+
+        <div class="page-break"></div>
+
+        <h2 id="system-architecture">5. SYSTEM ARCHITECTURE</h2>
+        
+        <h3>5.1 TECHNOLOGY STACK</h3>
+        <ul>
+            <li><strong>Backend Framework:</strong> CodeIgniter 4</li>
+            <li><strong>Database:</strong> MySQL/MariaDB</li>
+            <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+            <li><strong>UI Framework:</strong> AdminLTE (Bootstrap-based)</li>
+            <li><strong>Version Control:</strong> Git & GitHub</li>
+            <li><strong>Web Server:</strong> Apache (XAMPP)</li>
+            <li><strong>PHP Version:</strong> 8.2 or higher</li>
+        </ul>
+
+        <h3>5.2 MVC ARCHITECTURE</h3>
+
+        <h4>Model (Data Layer):</h4>
+        <ul>
+            <li>UserModel: Handles user data operations</li>
+            <li>ProductModel: Manages product inventory</li>
+            <li>CategoryModel: Handles product categories</li>
+            <li>CustomerModel: Manages customer information</li>
+            <li>SaleModel: Records sales transactions</li>
+            <li>SaleItemModel: Manages sale line items</li>
+            <li>StockMovementModel: Tracks stock changes</li>
+            <li>LogModel: Records system activities</li>
+        </ul>
+
+        <h4>View (Presentation Layer):</h4>
+        <ul>
+            <li>Login views</li>
+            <li>Dashboard view</li>
+            <li>Product management views</li>
+            <li>POS interface</li>
+            <li>Sales history views</li>
+            <li>User management views</li>
+            <li>Receipt template</li>
+        </ul>
+
+        <h4>Controller (Application Layer):</h4>
+        <ul>
+            <li>Auth: Handles authentication with login attempt limiting</li>
+            <li>Dashboard: Manages dashboard data and charts</li>
+            <li>Product: Product CRUD and stock adjustment</li>
+            <li>Category: Category management</li>
+            <li>Customers: Customer management</li>
+            <li>Pos: Point of Sale transactions</li>
+            <li>Sales: Sales history and voiding</li>
+            <li>Users: User management</li>
+            <li>Logs: Activity logs</li>
+        </ul>
+
+        <div class="page-break"></div>
+
+        <h2 id="working-features">6. WORKING SYSTEM FEATURES</h2>
+        
+        <h3>6.1 LOGIN/REGISTRATION</h3>
+
+        <h4>Login Feature:</h4>
+        <ul>
+            <li>User authentication using NAME and password (not email)</li>
+            <li>Password hashing using password_verify() for security</li>
+            <li>Session management with automatic regeneration</li>
+            <li>Login attempt limiting (5 attempts max, 3-minute lockout)</li>
+            <li>Failed login attempts logged with IP address and user agent</li>
+            <li>Activity logging for login and logout events</li>
+            <li>Error messages for invalid credentials</li>
+        </ul>
+
+        <h4>Registration/User Management:</h4>
+        <ul>
+            <li>User management accessible by Admin users</li>
+            <li>User information fields:
+                <ul>
+                    <li>Full Name</li>
+                    <li>Email Address</li>
+                    <li>Password (hashed with password_hash())</li>
+                    <li>Phone Number (optional)</li>
+                    <li>Role (Admin/Cashier)</li>
+                    <li>Account Status (Active/Inactive)</li>
+                </ul>
+            </li>
+            <li>Form validation</li>
+            <li>Email uniqueness check</li>
+            <li>Soft delete functionality for users</li>
+        </ul>
+
+        <h3>6.2 BASIC CRUD OPERATIONS</h3>
+
+        <h4>a) Product Management (CRUD):</h4>
+        <ul>
+            <li><strong>Create:</strong> Add new products with details (SKU, name, category, unit, cost, price, stock, reorder level, active status)</li>
+            <li><strong>Read:</strong> View all products in DataTable with search, filter, and pagination</li>
+            <li><strong>Update:</strong> Edit product information</li>
+            <li><strong>Delete:</strong> Delete products from database</li>
+            <li>Stock adjustment functionality (stock in/stock out)</li>
+            <li>Low stock alerts based on reorder level</li>
+            <li>Activity logging for product changes</li>
+        </ul>
+
+        <h4>b) Category Management (CRUD):</h4>
+        <ul>
+            <li><strong>Create:</strong> Add new product categories</li>
+            <li><strong>Read:</strong> View all categories</li>
+            <li><strong>Update:</strong> Edit category details</li>
+            <li><strong>Delete:</strong> Remove categories</li>
+            <li>Activity logging for category changes</li>
+        </ul>
+
+        <h4>c) Sales Management:</h4>
+        <ul>
+            <li>Point of Sale (POS) interface with product search and category browsing</li>
+            <li>Cart management with quantity adjustment</li>
+            <li>Discount application</li>
+            <li>Multiple payment methods (Cash, etc.)</li>
+            <li>Change calculation</li>
+            <li>Receipt generation with unique receipt numbers (format: IAN-YYYYMMDDHHMMSS-XXXXXX)</li>
+            <li>Sale history with DataTable, search, and filter</li>
+            <li>View and print receipts</li>
+            <li>Void sales with reason logging</li>
+            <li>Automatic stock deduction on sale</li>
+            <li>Stock restoration on void</li>
+            <li>Activity logging for sales and voids</li>
+        </ul>
+
+        <h4>d) Stock Management:</h4>
+        <ul>
+            <li>Stock adjustment (in/out) with reason</li>
+            <li>Stock movement tracking</li>
+            <li>Reorder level alerts</li>
+            <li>Stock movement history with user attribution</li>
+        </ul>
+
+        <h4>e) User Management (CRUD):</h4>
+        <ul>
+            <li><strong>Create:</strong> Register new system users</li>
+            <li><strong>Read:</strong> View user list</li>
+            <li><strong>Update:</strong> Edit user information and roles</li>
+            <li><strong>Delete:</strong> Soft delete users</li>
+            <li>Activity logging for user management</li>
+        </ul>
+
+        <div class="page-break"></div>
+
+        <h2 id="advanced-features">7. ADVANCED FEATURES</h2>
+        
+        <h3>7.1 DASHBOARD AND ANALYTICS</h3>
+        <ul>
+            <li>Real-time summary cards:
+                <ul>
+                    <li>Total Products</li>
+                    <li>Today's Revenue</li>
+                    <li>This Week's Revenue</li>
+                    <li>This Month's Revenue</li>
+                    <li>This Year's Revenue</li>
+                    <li>Total Users (Admin only)</li>
+                </ul>
+            </li>
+            <li>Charts and graphs:
+                <ul>
+                    <li>Last 7 Days Revenue Chart</li>
+                    <li>Current Month Daily Revenue Chart</li>
+                    <li>Current Year Monthly Revenue Chart</li>
+                </ul>
+            </li>
+            <li>Recent activity logs (Admin only)</li>
+            <li>Role-based dashboard display</li>
+        </ul>
+
+        <h3>7.2 POINT OF SALE (POS) SYSTEM</h3>
+        <ul>
+            <li>User-friendly POS interface</li>
+            <li>Product search and category browsing</li>
+            <li>Cart management with add/remove items</li>
+            <li>Quantity adjustment per item</li>
+            <li>Discount application (total discount)</li>
+            <li>Multiple payment methods</li>
+            <li>Change calculation</li>
+            <li>Receipt generation with unique receipt numbers (format: IAN-YYYYMMDDHHMMSS-XXXXXX)</li>
+            <li>Printable receipts</li>
+            <li>Automatic stock deduction on successful sale</li>
+            <li>Stock movement logging</li>
+        </ul>
+
+        <h3>7.3 SALES MANAGEMENT AND REPORTING</h3>
+        <ul>
+            <li>Sale history in DataTable format</li>
+            <li>Search and filter sales by receipt number, date, cashier, payment method, status</li>
+            <li>View and print individual receipts</li>
+            <li>Void completed sales with reason</li>
+            <li>Automatic stock restoration when sale is voided</li>
+            <li>Sale status tracking (completed/voided)</li>
+        </ul>
+
+        <h3>7.4 STOCK MANAGEMENT</h3>
+        <ul>
+            <li>Real-time stock tracking</li>
+            <li>Stock adjustment functionality (in/out) with reason</li>
+            <li>Reorder level configuration and alerts</li>
+            <li>Stock movement history with user attribution</li>
+            <li>Stock movement types: sale, adjust, void</li>
+            <li>Unit cost tracking for stock movements</li>
+        </ul>
+
+        <h3>7.5 USER ROLES AND PERMISSIONS</h3>
+        
+        <h4>Admin Role:</h4>
+        <ul>
+            <li>Full system access</li>
+            <li>User management</li>
+            <li>Product management</li>
+            <li>Category management</li>
+            <li>Sales history and voiding</li>
+            <li>Dashboard with all metrics</li>
+            <li>Activity logs</li>
+            <li>Stock management</li>
+        </ul>
+
+        <h4>Cashier Role:</h4>
+        <ul>
+            <li>Dashboard access (limited metrics)</li>
+            <li>POS transactions</li>
+            <li>View sales history</li>
+            <li>Product viewing</li>
+            <li>(Permissions are controlled via RoleFilter)</li>
+        </ul>
+
+        <h3>7.6 AUDIT TRAIL AND ACTIVITY LOGS</h3>
+        <ul>
+            <li>Activity logging (tbl_logs) with:
+                <ul>
+                    <li>User ID and name</li>
+                    <li>Action performed</li>
+                    <li>Date and time of log</li>
+                    <li>User IP address</li>
+                    <li>Device used (user agent)</li>
+                    <li>Action identifier (LOGIN, LOGOUT, ADD, UPDATED, DELETED)</li>
+                </ul>
+            </li>
+            <li>Logs all major system activities:
+                <ul>
+                    <li>Login/Logout</li>
+                    <li>Product changes</li>
+                    <li>Category changes</li>
+                    <li>Sales transactions</li>
+                    <li>Sale voids</li>
+                    <li>Stock adjustments</li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="page-break"></div>
+
+        <h2 id="testing">8. TESTING AND DEBUGGING</h2>
+        
+        <h3>8.1 TESTING STRATEGY</h3>
+        <ul>
+            <li><strong>Unit Testing:</strong> Test individual components</li>
+            <li><strong>Integration Testing:</strong> Test module interactions</li>
+            <li><strong>User Acceptance Testing (UAT):</strong> Test with actual users</li>
+            <li><strong>Cross-browser Testing:</strong> Ensure compatibility</li>
+        </ul>
+
+        <h3>8.2 TEST CASES</h3>
+        
+        <h4>Test Case 1: User Login</h4>
+        <p><strong>Precondition:</strong> User account exists<br>
+        <strong>Steps:</strong> Enter valid name and password, click Login<br>
+        <strong>Expected Result:</strong> User is authenticated and redirected to dashboard</p>
+
+        <h4>Test Case 2: Product Creation</h4>
+        <p><strong>Precondition:</strong> User is logged in as Admin<br>
+        <strong>Steps:</strong> Fill product form, submit<br>
+        <strong>Expected Result:</strong> Product is saved to database</p>
+
+        <h4>Test Case 3: POS Transaction</h4>
+        <p><strong>Precondition:</strong> User is logged in as Cashier<br>
+        <strong>Steps:</strong> Select products, enter payment, complete sale<br>
+        <strong>Expected Result:</strong> Sale is recorded, stock is updated, receipt generated</p>
+
+        <h4>Test Case 4: Sales Report</h4>
+        <p><strong>Precondition:</strong> Sales data exists<br>
+        <strong>Steps:</strong> Navigate to sales history<br>
+        <strong>Expected Result:</strong> Sales history displays correct sales data</p>
+
+        <h3>8.3 DEBUGGING</h3>
+        <ul>
+            <li>Use CodeIgniter's debugging tools</li>
+            <li>Check application logs in writable/logs/</li>
+            <li>Use browser developer tools for frontend issues</li>
+            <li>Test database queries directly</li>
+            <li>Validate form inputs</li>
+        </ul>
+
+        <div class="page-break"></div>
+
+        <h2 id="github">9. GITHUB VERSION CONTROL</h2>
+        
+        <h3>9.1 REPOSITORY SETUP</h3>
+        <ul>
+            <li><strong>Repository Name:</strong> Ian-s-Store</li>
+            <li><strong>Platform:</strong> GitHub</li>
+            <li><strong>Access:</strong> Private repository</li>
+            <li><strong>Collaborators:</strong> All group members</li>
+        </ul>
+
+        <h3>9.2 COMMIT GUIDELINES</h3>
+        <ul>
+            <li>Clear and meaningful commit messages</li>
+            <li>Commit frequently with small changes</li>
+            <li>Use descriptive commit messages:
+                <ul>
+                    <li>"feat: Add product CRUD functionality"</li>
+                    <li>"fix: Resolve login authentication issue"</li>
+                    <li>"docs: Update system documentation"</li>
+                    <li>"style: Format code according to PSR-12"</li>
+                    <li>"refactor: Optimize database queries"</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>9.3 BRANCHING STRATEGY</h3>
+        <ul>
+            <li><strong>main:</strong> Production-ready code</li>
+            <li><strong>develop:</strong> Development branch</li>
+            <li><strong>feature/*:</strong> Feature branches</li>
+            <li><strong>bugfix/*:</strong> Bug fix branches</li>
+            <li><strong>hotfix/*:</strong> Emergency fixes</li>
+        </ul>
+
+        <h3>9.4 COLLABORATION</h3>
+        <ul>
+            <li>All members must contribute regularly</li>
+            <li>Pull requests for code review</li>
+            <li>Resolve conflicts before merging</li>
+            <li>Document all changes</li>
+        </ul>
+
+        <div class="page-break"></div>
+
+        <h2 id="conclusion">10. CONCLUSION</h2>
+        
+        <p>The Shadrack Talabahan Seafood Restaurant and Retail System successfully addresses the client's needs by providing a comprehensive solution for managing seafood inventory, sales, and customers for both restaurant and retail operations. The system streamlines business operations, reduces manual errors, and provides valuable insights through reporting and analytics.</p>
+
+        <h3>Key Achievements:</h3>
+        <ul>
+            <li>Implemented secure user authentication with role-based access and login attempt limiting</li>
+            <li>Created complete product and inventory management system with reorder levels</li>
+            <li>Developed user-friendly POS interface</li>
+            <li>Implemented sales history with receipt viewing and voiding</li>
+            <li>Maintained proper audit trail and activity logs with IP and device tracking</li>
+            <li>Built dashboard with charts and analytics</li>
+        </ul>
+
+        <h3>Future Enhancements:</h3>
+        <ul>
+            <li>Integration with barcode scanners</li>
+            <li>Online ordering and delivery features</li>
+            <li>Mobile application for remote management</li>
+            <li>Integration with accounting software</li>
+            <li>Customer loyalty program</li>
+            <li>Freshness tracking for seafood products</li>
+            <li>Reservation system for restaurant dine-in</li>
+        </ul>
+
+        <p>The system follows MVC architecture, clean coding practices, and industry standards, ensuring maintainability and scalability for future growth.</p>
+
+    </div>
+</body>
+</html>
